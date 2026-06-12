@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/media/igolf-hero.mp4",
+      "destination": "https://cdn.igolf32.com/wordpress/wp-content/uploads/iGolf2023.mp4"
+    }
+  ]
+}

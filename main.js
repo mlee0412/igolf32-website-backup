@@ -83,10 +83,37 @@
     }
   }
 
-  /* Hero background video: keep the poster if the remote file can't load */
+  /* Hero background video — mirrors the original Elementor hero:
+     autoplay muted (mobile too), fade in over the poster photo, and
+     loop the 0–70s segment. Falls back to the photo if no source loads. */
   var heroVideo = document.querySelector(".hero-media video");
   if (heroVideo) {
-    heroVideo.addEventListener("error", function () { heroVideo.remove(); }, true);
+    var loopEnd = parseFloat(heroVideo.getAttribute("data-loop-end")) || 0;
+
+    heroVideo.addEventListener("playing", function () {
+      heroVideo.classList.add("is-playing");
+    });
+
+    if (loopEnd > 0) {
+      heroVideo.addEventListener("timeupdate", function () {
+        if (heroVideo.currentTime >= loopEnd) {
+          heroVideo.currentTime = 0;
+          heroVideo.play();
+        }
+      });
+    }
+
+    /* Remove only when EVERY <source> has failed (error on the last source
+       or on the video element itself) so fallback sources still get tried. */
+    var lastSource = heroVideo.querySelector("source:last-of-type");
+    function dropVideo() {
+      if (heroVideo.networkState === HTMLMediaElement.NETWORK_NO_SOURCE || heroVideo.error) {
+        heroVideo.remove();
+      }
+    }
+    heroVideo.addEventListener("error", dropVideo);
+    if (lastSource) lastSource.addEventListener("error", function () { setTimeout(dropVideo, 0); });
+
     var p = heroVideo.play && heroVideo.play();
     if (p && p.catch) p.catch(function () { /* poster remains */ });
   }
