@@ -16,16 +16,26 @@ This is a public-surface backup, not a credentialed WordPress or hosting backup.
 
 Use this repo as a design and recovery reference for AI agents, developers, and human designers.
 
-## Deployable Emergency Site
+## Deployable Redesigned Site
 
-- `index.html` - static emergency customer-facing fallback site.
-- `styles.css` - shared responsive venue-site styling.
-- `assets/` - customer-facing media copied from the public website backup and WordPress media API.
+A full static redesign of igolf32.com built from the original site's content, assets, and brand research:
+
+- `index.html` - home page: video hero (original `iGolf2023.mp4` via CDN with photo fallback), stats, experience cards, simulator/bar features, gallery, Space Hospitality family, FAQ.
+- `pricing.html` - hourly bay rates plus food, liquor, and event menu links (official PDFs).
+- `lessons.html` - instructor profiles (Carlos Medina, KJ Lee, Sean Kim) and consultation CTAs.
+- `memberships.html` - Individual / Family / Premium tiers wired to the venue's live Square checkout links.
+- `reserve.html` - online booking (book.igolf32.com) plus a private-event inquiry form (mailto-based, no backend).
+- `contact.html` - location, hours, Google Maps embed, transit directions.
+- `terms.html` - Terms of Use regenerated from the original site's legal copy.
+- `styles.css` / `main.js` - shared dark-luxe neon design system (brand gold/magenta/cyan), self-hosted Rubik + Space Mono webfonts, scroll-reveal animations, count-up stats, mobile nav, sticky mobile CTA.
+- `assets/img/` + `assets/fonts/` - cleaned-up venue photos, logos, and webfonts copied from the original-site capture.
 - `_verification/` - desktop and mobile screenshots generated during preview checks.
 
 Vercel project: `igolf32-emergency-site`
 
-This repo preserves the original public-surface recovery snapshot and adds a deployable static preview for emergency continuity, AI agents, developers, and human designers.
+Known limitation: the build sandbox cannot download new binaries from igolf32.com (network egress policy), so the hero video and menu PDFs are hotlinked to the live original site/CDN; commit local copies when access allows.
+
+This repo preserves the original public-surface recovery snapshot and adds a deployable redesigned static site for continuity, AI agents, developers, and human designers.
 
 ## Latest Original Site Capture
 
