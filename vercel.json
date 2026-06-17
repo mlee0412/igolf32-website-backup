@@ -1,20 +1,26 @@
 {
-  "rewrites": [
-    {
-      "source": "/media/igolf-hero.mp4",
-      "destination": "https://cdn.igolf32.com/wordpress/wp-content/uploads/iGolf2023.mp4"
-    }
-  ],
   "redirects": [
-    { "source": "/reserve", "destination": "/#reserve", "permanent": false },
-    { "source": "/reserve/", "destination": "/#reserve", "permanent": false },
-    { "source": "/contact", "destination": "/#reserve", "permanent": false },
-    { "source": "/contact/", "destination": "/#reserve", "permanent": false },
-    { "source": "/pricing", "destination": "/#details", "permanent": false },
-    { "source": "/pricing/", "destination": "/#details", "permanent": false },
-    { "source": "/memberships", "destination": "/#details", "permanent": false },
-    { "source": "/memberships/", "destination": "/#details", "permanent": false },
-    { "source": "/lessons", "destination": "/#experience", "permanent": false },
-    { "source": "/lessons/", "destination": "/#experience", "permanent": false }
+    { "source": "/reserve", "destination": "/reserve.html", "permanent": false },
+    { "source": "/reserve/", "destination": "/reserve.html", "permanent": false },
+    { "source": "/reservations", "destination": "/reserve.html", "permanent": false },
+    { "source": "/reservations/", "destination": "/reserve.html", "permanent": false },
+    { "source": "/booknow", "destination": "https://book.igolf32.com/", "permanent": false },
+    { "source": "/booknow/", "destination": "https://book.igolf32.com/", "permanent": false },
+    { "source": "/contact", "destination": "/contact.html", "permanent": false },
+    { "source": "/contact/", "destination": "/contact.html", "permanent": false },
+    { "source": "/pricing", "destination": "/pricing.html", "permanent": false },
+    { "source": "/pricing/", "destination": "/pricing.html", "permanent": false },
+    { "source": "/memberships", "destination": "/memberships.html", "permanent": false },
+    { "source": "/memberships/", "destination": "/memberships.html", "permanent": false },
+    { "source": "/lessons", "destination": "/lessons.html", "permanent": false },
+    { "source": "/lessons/", "destination": "/lessons.html", "permanent": false },
+    { "source": "/about", "destination": "/#experience", "permanent": false },
+    { "source": "/about/", "destination": "/#experience", "permanent": false },
+    { "source": "/faq", "destination": "/#faq", "permanent": false },
+    { "source": "/faq/", "destination": "/#faq", "permanent": false },
+    { "source": "/terms-of-use", "destination": "/terms.html", "permanent": false },
+    { "source": "/terms-of-use/", "destination": "/terms.html", "permanent": false },
+    { "source": "/privacy-policy", "destination": "/terms.html", "permanent": false },
+    { "source": "/privacy-policy/", "destination": "/terms.html", "permanent": false }
   ]
 }
