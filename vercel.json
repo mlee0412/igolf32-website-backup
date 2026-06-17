@@ -8,6 +8,8 @@
     { "source": "/booknow/", "destination": "https://book.igolf32.com/", "permanent": false },
     { "source": "/contact", "destination": "/contact.html", "permanent": false },
     { "source": "/contact/", "destination": "/contact.html", "permanent": false },
+    { "source": "/menu", "destination": "/pricing.html#menus", "permanent": false },
+    { "source": "/menu/", "destination": "/pricing.html#menus", "permanent": false },
     { "source": "/pricing", "destination": "/pricing.html", "permanent": false },
     { "source": "/pricing/", "destination": "/pricing.html", "permanent": false },
     { "source": "/memberships", "destination": "/memberships.html", "permanent": false },
