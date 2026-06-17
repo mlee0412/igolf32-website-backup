@@ -398,12 +398,8 @@ p { margin: 0 0 1em; }
 }
 
 .hero-media video {
-  opacity: 0;
-  transition: opacity 1.2s ease;
-}
-
-.hero-media video.is-playing {
   opacity: 1;
+  transition: opacity 1.2s ease;
 }
 
 .hero-scrim {
