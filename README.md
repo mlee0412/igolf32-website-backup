@@ -33,7 +33,7 @@ A full static redesign of igolf32.com built from the original site's content, as
 
 Vercel project: `igolf32-emergency-site`
 
-Known limitation: the build sandbox cannot download new binaries from igolf32.com (network egress policy), so the hero video and menu PDFs are hotlinked to the live original site/CDN; commit local copies when access allows.
+Current menu PDFs are committed locally under `assets/menus/` from the verified `SP32-MEDIA / 6 Menu Design + Recipe R&D / 골프장 메뉴 / iGolf Menu 2026 Winter` Drive folder. `/menu` and `/menu.pdf` open the combined current menu PDF directly.
 
 This repo preserves the original public-surface recovery snapshot and adds a deployable redesigned static site for continuity, AI agents, developers, and human designers.
 
