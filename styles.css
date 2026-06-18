@@ -604,6 +604,18 @@ p { margin: 0 0 1em; }
   background: radial-gradient(420px 200px at 50% -20%, rgba(246, 196, 83, 0.14), transparent 70%);
   opacity: 0;
   transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+a.card,
+.card-action {
+  color: inherit;
+  display: block;
 }
 
 .card:hover {
@@ -641,6 +653,7 @@ p { margin: 0 0 1em; }
   text-transform: uppercase;
   white-space: normal;
   overflow-wrap: anywhere;
+  color: var(--gold-soft);
 }
 
 .card .card-link::after {
