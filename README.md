@@ -7,6 +7,7 @@ Production: https://igolf32.com · Vercel project: `igolf32-emergency-site`.
 The deployable source matches production deployment `dpl_BEMbmZBNxYrTSzgcK2ifc7xEjWSD`. All 59 deployed source files were checked by SHA-1 before this sync.
 
 - Current redesign, inline menu, events page, membership rates, and booking links are included.
+- `igolf-next.css` / `igolf-next.js` (added after this release): the "midnight clubhouse" layer. Home, events, pricing and memberships bodies use its `.ig-*` components and the per-person price check; other marketing pages load the stylesheet for the shared display face and buttons.
 - Event inquiries are stored through `api/inquiry.js` and emailed through Resend.
 - Production configuration requires `BLOB_READ_WRITE_TOKEN`, `RESEND_API_KEY`, `INQUIRY_ALERT_FROM`, and `INQUIRY_ALERT_TO`. Values live in Vercel / the automation vault, never in Git.
 - The sending domain is `mail.igolf32.com`; alerts go to `hello@igolf32.com`.

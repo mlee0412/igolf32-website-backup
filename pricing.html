@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="growth.css">
   <link rel="stylesheet" href="site-2026.css">
+  <link rel="stylesheet" href="igolf-next.css">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,108 +75,113 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-hero" style="--page-img:url('assets/img/neon-bar.jpg')">
-      <div class="wrap">
-        <p class="kicker">Pricing &amp; Rates</p>
-        <h1>Simple rates. <span class="text-gradient">Serious value.</span></h1>
-        <p class="lead">Book by the hour, split it with up to six friends, and order food &amp; drinks straight to your bay.</p>
-      </div>
-    </section>
+  <main id="main" class="ig">
 
-    <section class="section" style="padding-top:clamp(36px,5vw,64px)">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="kicker">Simulator Bays</p>
-          <h2>Hourly bay rates</h2>
-          <p class="lead">Per bay, not per person &mdash; up to 6 guests share one bay. Live availability and exact pricing are always shown at checkout on <a href="https://book.igolf32.com/" target="_blank" rel="noopener">book.igolf32.com</a>.</p>
+    <section class="ig-pagehero">
+      <div class="ig-wrap ig-hero-inner">
+        <div class="ig-hero-copy">
+          <p class="ig-kicker">Pricing &amp; rates</p>
+          <h1 class="ig-h1">You pay for the bay, not the headcount.</h1>
+          <p class="ig-hero-lead">One hourly rate covers up to six guests, rental clubs and your own screen. Food and drinks are ordered straight to your bay.</p>
         </div>
-        <div class="reveal">
-          <table class="rate-table">
-            <thead>
-              <tr><th scope="col">Session</th><th scope="col">When</th><th scope="col">Rate</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Off-Peak</strong></td>
-                <td>Mon&ndash;Fri 8 AM&ndash;4 PM &middot; Mon&ndash;Thu 10 PM&ndash;12 AM &middot; Sun 5 PM&ndash;12 AM</td>
-                <td>$60 / hr</td>
-              </tr>
-              <tr>
-                <td><strong>Peak</strong></td>
-                <td>All other hours, holidays &amp; holiday eves</td>
-                <td>$80 / hr</td>
-              </tr>
-              <tr>
-                <td><strong>Members</strong></td>
-                <td>Member bay rental &mdash; included daily member sessions are covered by your <a href="memberships.html">membership</a></td>
-                <td>$40 / hr</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="form-note" style="margin-top:14px">Rates shown per simulator bay and subject to change &mdash; the booking portal always reflects current pricing. After the first hour, rentals are billed in 30-minute increments. Rental clubs included.</p>
-        </div>
-        <div class="hero-actions reveal" style="margin:34px 0 0">
-          <a class="btn btn-gold btn-lg" href="https://book.igolf32.com/" target="_blank" rel="noopener">Check Live Availability</a>
-          <a class="btn btn-ghost btn-lg" href="memberships.html">Or Join Monthly From $325</a>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" style="padding-top:0">
-      <div class="wrap">
-        <div class="info-panel per-person reveal">
-          <p class="kicker">Split it with friends</p>
-          <h2>Rates are per bay, for up to 6 guests.</h2>
-          <p class="lead">At 6 guests that works out to <strong>from $10 per person per hour</strong> off-peak ($60 &divide; 6) and about $13.33 per person per hour at peak ($80 &divide; 6).</p>
-          <div class="hero-actions"><a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a><a class="btn btn-ghost" href="events.html">Groups of 7+? Plan an event</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section neon-band" id="menus">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="kicker" style="color:var(--magenta)">Food &amp; Drink</p>
-          <h2>The menus</h2>
-          <p class="lead">From gourmet bar bites to craft cocktails, soju, wine, and champagne &mdash; everything is served right to your simulator bay.</p>
-          <div class="hero-actions" style="margin-top:24px">
-            <a class="btn btn-gold btn-lg" href="menu.html">View the Full Menu</a>
-            <a class="btn btn-ghost btn-lg" href="/menu.pdf">Download Menu PDF</a>
+        <div class="ig-card" data-calc data-guests="6" data-rate="60">
+          <h2 class="ig-card-title">Split it</h2>
+          <div class="ig-field-group">
+            <span class="ig-label" id="calc-guests">Guests in the bay</span>
+            <div class="ig-seg ig-seg--6" role="group" aria-labelledby="calc-guests">
+              <button type="button" data-set-guests="1" aria-pressed="false">1</button>
+              <button type="button" data-set-guests="2" aria-pressed="false">2</button>
+              <button type="button" data-set-guests="3" aria-pressed="false">3</button>
+              <button type="button" data-set-guests="4" aria-pressed="false">4</button>
+              <button type="button" data-set-guests="5" aria-pressed="false">5</button>
+              <button type="button" data-set-guests="6" aria-pressed="true">6</button>
+            </div>
+          </div>
+          <div class="ig-field-group">
+            <span class="ig-label" id="calc-when">When</span>
+            <div class="ig-seg ig-seg--2" role="group" aria-labelledby="calc-when">
+              <button type="button" data-set-rate="60" aria-pressed="true">Off-peak</button>
+              <button type="button" data-set-rate="80" aria-pressed="false">Peak</button>
+            </div>
+          </div>
+          <div class="ig-result" data-calc-bay aria-live="polite">
+            <div class="ig-result-row">
+              <span><span class="ig-big" data-calc-per>$10</span> <span class="ig-soft">each, per hour</span></span>
+              <span class="ig-mono"><span data-calc-rate>$60</span> / bay</span>
+            </div>
+            <a class="ig-btn ig-btn--block" href="https://book.igolf32.com/" target="_blank" rel="noopener">Check live availability</a>
           </div>
         </div>
-        <div class="card-grid">
-          <a class="card reveal card-action" href="/food-menu.pdf" aria-label="Open current iGolf rates and food PDF">
-            <div class="icon">🍕</div>
-            <h3>Rates &amp; Food</h3>
-            <p>Bay rates plus the full kitchen lineup &mdash; pizzas, K-Town Loaded Fries, Space Sliders, and shareable plates.</p>
-            <span class="card-link">Open PDF</span>
-          </a>
-          <a class="card reveal card-action" href="/drink-menu.pdf" aria-label="Open current iGolf liquor and drinks PDF" style="--d:.08s">
-            <div class="icon">🥃</div>
-            <h3>Liquor &amp; Drinks</h3>
-            <p>Cocktails, beer, wine, champagne, and flavored soju &mdash; the full bar list.</p>
-            <span class="card-link">Open PDF</span>
-          </a>
-          <a class="card reveal card-action" href="/eventmenu" aria-label="Open current iGolf event and group menu PDF" style="--d:.16s">
-            <div class="icon">🎪</div>
-            <h3>Event &amp; Group Menu</h3>
-            <p>Current bay packages, food, drinks, and open-bar pricing for private parties and corporate events.</p>
-            <span class="card-link">Open PDF</span>
-          </a>
+      </div>
+    </section>
+
+    <section class="ig-sec" id="rates">
+      <div class="ig-wrap">
+        <div class="ig-head"><p class="ig-kicker">Simulator bays</p><h2 class="ig-h2">Hourly bay rates</h2></div>
+        <div class="ig-rate">
+          <div class="ig-rate-name"><b>Off-peak</b><span>Mon&ndash;Fri 8 AM&ndash;4 PM &middot; Mon&ndash;Thu 10 PM&ndash;12 AM &middot; Sun 5 PM&ndash;12 AM</span></div>
+          <div class="ig-rate-price"><b>$60<small> / hr</small></b></div>
+        </div>
+        <div class="ig-rate">
+          <div class="ig-rate-name"><b>Peak</b><span>All other hours, holidays &amp; holiday eves</span></div>
+          <div class="ig-rate-price"><b>$80<small> / hr</small></b></div>
+        </div>
+        <div class="ig-rate">
+          <div class="ig-rate-name"><b>Members</b><span>Member bay rental &mdash; included daily member sessions are covered by your <a href="memberships.html">membership</a></span></div>
+          <div class="ig-rate-price"><b>$40<small> / hr</small></b></div>
+        </div>
+        <p class="ig-small" style="padding-top:18px;max-width:80ch">Rates shown per simulator bay and subject to change &mdash; the booking portal always reflects current pricing. After the first hour, rentals are billed in 30-minute increments. Rental clubs included. Groups of 7+? <a href="events.html#inquiry"><strong>Plan an event</strong></a>.</p>
+        <div class="ig-actions" style="padding-top:28px">
+          <a class="ig-btn" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a bay</a>
+          <a class="ig-btn ig-btn--ghost" href="memberships.html">Or join monthly from $325</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="cta-panel reveal" style="--cta-img:url('assets/img/venue-1.jpg')">
-          <p class="kicker">Groups &amp; Events</p>
-          <h2>Bringing a crowd?</h2>
-          <p class="lead">Custom packages for parties of 7+ with reserved bays, food &amp; beverage minimums, and tournament formats.</p>
-          <div class="hero-actions" style="margin-bottom:0">
-            <a class="btn btn-gold btn-lg" href="events.html#inquiry">Request Event Pricing</a>
-            <a class="btn btn-ghost btn-lg" href="tel:+16468384004">Call (646) 838-4004</a>
+    <section class="ig-sec" id="menus">
+      <div class="ig-wrap">
+        <div class="ig-head">
+          <p class="ig-kicker">Food &amp; drink</p>
+          <h2 class="ig-h2">The menus</h2>
+          <p class="ig-soft">From gourmet bar bites to craft cocktails, soju, wine, and champagne &mdash; everything is served right to your simulator bay.</p>
+        </div>
+        <div class="ig-trio">
+          <article class="ig-panel"><div class="ig-panel-body">
+            <h3 class="ig-h3">Rates &amp; food</h3>
+            <p class="ig-soft">Bay rates plus the full kitchen lineup &mdash; pizzas, K-Town Loaded Fries, Space Sliders, and shareable plates.</p>
+            <a class="ig-link" href="/food-menu.pdf" aria-label="Open current iGolf rates and food PDF">Open PDF &rarr;</a>
+          </div></article>
+          <article class="ig-panel"><div class="ig-panel-body">
+            <h3 class="ig-h3">Liquor &amp; drinks</h3>
+            <p class="ig-soft">Cocktails, beer, wine, champagne, and flavored soju &mdash; the full bar list.</p>
+            <a class="ig-link" href="/drink-menu.pdf" aria-label="Open current iGolf liquor and drinks PDF">Open PDF &rarr;</a>
+          </div></article>
+          <article class="ig-panel"><div class="ig-panel-body">
+            <h3 class="ig-h3">Event &amp; group menu</h3>
+            <p class="ig-soft">Current bay packages, food, drinks, and open-bar pricing for private parties and corporate events.</p>
+            <a class="ig-link" href="/eventmenu" aria-label="Open current iGolf event and group menu PDF">Open PDF &rarr;</a>
+          </div></article>
+        </div>
+        <div class="ig-actions" style="padding-top:28px">
+          <a class="ig-btn ig-btn--ghost" href="menu.html">View the full menu</a>
+          <a class="ig-link" href="/menu.pdf">Download menu PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ig-sec ig-sec--last">
+      <div class="ig-wrap">
+        <div class="ig-band">
+          <img src="assets/img/venue-1.jpg" alt="A group gathered in a bay, watching a teammate hit" loading="lazy" width="1920" height="1280">
+          <div class="ig-band-body">
+            <p class="ig-kicker">Groups &amp; events</p>
+            <h2 class="ig-h2">Bringing a crowd?</h2>
+            <p class="ig-soft">Custom packages for parties of 7+ with reserved bays, food &amp; beverage minimums, and tournament formats.</p>
+            <div class="ig-actions">
+              <a class="ig-btn ig-btn--lg" href="events.html#inquiry">Request event pricing</a>
+              <a class="ig-link" href="tel:+16468384004">or call (646) 838-4004</a>
+            </div>
           </div>
         </div>
       </div>
@@ -246,5 +252,6 @@
 
   <script src="main.js" defer></script>
   <script src="growth.js" defer></script>
+  <script src="igolf-next.js" defer></script>
 </body>
 </html>
