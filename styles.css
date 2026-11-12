@@ -351,9 +351,17 @@ p { margin: 0 0 1em; }
 @media (max-width: 900px) {
   .nav-toggle { display: block; }
 
+  /* Sized in viewport units, not inset:0 — the header's backdrop-filter makes
+     it the containing block for this fixed panel, which would clip it to 72px. */
   .nav-links {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    padding: calc(var(--header-h) + 16px) 24px 32px;
+    overflow-y: auto;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
@@ -370,6 +378,9 @@ p { margin: 0 0 1em; }
   }
 
   .nav-links a:not(.btn) { font-size: 1.05rem; }
+  .nav-links .btn { width: 100%; max-width: 360px; justify-content: center; }
+  body.nav-open { overflow: hidden; }
+  .nav-toggle { border-color: rgba(255, 255, 255, 0.4); }
 }
 
 /* ---- Hero ---- */
