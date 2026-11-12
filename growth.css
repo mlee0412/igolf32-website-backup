@@ -1,0 +1,14 @@
+/* Growth layer 2026-11-12: events CTAs, holiday band, mobile action bar */
+.nav-links .nav-event{padding:10px 16px}
+@media (max-width:900px){.nav-links .nav-event{display:inline-flex}}
+.holiday-band{background:linear-gradient(90deg,rgba(212,175,55,.16),rgba(212,175,55,.04));border-top:1px solid rgba(212,175,55,.35);border-bottom:1px solid rgba(212,175,55,.35)}
+.holiday-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.holiday-inner p{margin:0;max-width:62ch}
+.per-person h2{margin:.2em 0 .4em}
+.per-person .hero-actions{margin-top:20px}
+.hp{position:absolute!important;left:-10000px;width:1px;height:1px;overflow:hidden}
+.inquiry-status{margin-top:14px;padding:14px 16px;border-radius:12px;border:1px solid rgba(212,175,55,.45);background:rgba(212,175,55,.08)}
+.inquiry-status[data-state=error]{border-color:#ff6b6b;background:rgba(255,107,107,.08)}
+.mobile-cta{gap:6px}
+.mobile-cta a{flex:1 1 0;text-align:center}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.hero-media video{display:none}}

@@ -8,16 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iGolf By Space NYC | Indoor Golf Simulators, Bar &amp; Events in Koreatown</title>
   <meta name="description" content="Swing at 367+ real-life courses on Trackman iO &amp; Kakao VX simulators, with a full neon-lit bar and private event bays. 22 W 32nd St, Floor 6, Koreatown NYC. Open daily from 8 AM.">
+  <link rel="canonical" href="https://igolf32.com/">
   <meta name="theme-color" content="#07090d">
   <link rel="icon" href="assets/img/favicon-192.png">
   <link rel="apple-touch-icon" href="assets/img/favicon-192.png">
   <meta property="og:title" content="iGolf By Space NYC — Indoor Golf Simulators &amp; Lounge">
   <meta property="og:description" content="NYC's largest course catalog. Trackman iO &amp; Kakao VX bays, craft cocktails, soju, and private events — six floors above Koreatown.">
-  <meta property="og:image" content="assets/img/sim-bay-1.jpg">
+  <meta property="og:image" content="https://igolf32.com/assets/img/sim-bay-1.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://igolf32.com/">
   <link rel="preload" as="image" href="assets/img/sim-bay-1.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="growth.css">
+  <link rel="stylesheet" href="site-2026.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +40,7 @@
       "addressCountry": "US"
     },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "23:59" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "00:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "08:00", "closes": "02:00" }
     ],
     "sameAs": [
@@ -58,13 +61,17 @@
       <a class="brand" href="index.html" aria-label="iGolf By Space home">
         <img src="assets/img/logo-horizontal-white.png" alt="iGolf By Space" width="1920" height="480">
       </a>
+      <div class="header-quick"><a class="btn btn-ghost" href="events.html#inquiry">Plan an Event</a><a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a></div>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
       <nav class="nav-links" aria-label="Primary">
+        <a href="events.html">Events</a>
         <a href="pricing.html">Pricing</a>
+        <a href="menu.html">Menu</a>
         <a href="lessons.html">Lessons</a>
         <a href="memberships.html">Memberships</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book Now</a>
+        <a class="btn btn-ghost nav-event" href="events.html#inquiry">Plan an Event</a>
+        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
       </nav>
     </div>
   </header>
@@ -74,8 +81,8 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/img/sim-bay-1.jpg" alt="" fetchpriority="high">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/sim-bay-1.jpg">
+        <img src="assets/img/hero-poster.jpg" alt="" fetchpriority="high">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg">
           <source src="assets/img/hero-loop.mp4" type="video/mp4">
         </video>
       </div>
@@ -87,16 +94,26 @@
         <p class="lead">Trackman iO &amp; Kakao VX simulator bays, a neon-lit bar with craft cocktails and soju, and private rooms built for game night &mdash; six floors up at 22 W 32nd St.</p>
         <div class="hero-actions">
           <a class="btn btn-gold btn-lg" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
-          <a class="btn btn-ghost btn-lg" href="tel:+16468384004">Call (646) 838-4004</a>
+          <a class="btn btn-ghost btn-lg" href="events.html#inquiry">Plan an Event</a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="num" data-count="367" data-suffix="+">0</span><span class="label">Real-Life Courses</span></div>
-          <div class="stat"><span class="num" data-count="10">0</span><span class="label">Simulator Bays</span></div>
-          <div class="stat"><span class="num" data-count="6">0</span><span class="label">Guests Per Bay</span></div>
-          <div class="stat"><span class="num" data-count="18">0</span><span class="label">Hours Open Daily</span></div>
+          <div class="stat"><span class="num" data-count="367" data-suffix="+">367+</span><span class="label">Real-Life Courses</span></div>
+          <div class="stat"><span class="num" data-count="10">10</span><span class="label">Simulator Bays</span></div>
+          <div class="stat"><span class="num" data-count="6">6</span><span class="label">Guests Per Bay</span></div>
+          <div class="stat"><span class="num" data-count="18">18</span><span class="label">Hours Open Fri &amp; Sat</span></div>
         </div>
       </div>
       <div class="scroll-cue" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ EVENTS CTA ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta-strip reveal">
+          <div><p class="kicker">Groups &amp; Holiday Parties</p><h2>Bring the whole team.</h2><p>Adjacent bays or the full floor, tournament formats and in-bay food and drink. Holiday parties now booking.</p></div>
+          <div class="hero-actions"><a class="btn btn-gold btn-lg" href="events.html#inquiry">Plan an Event</a><a class="btn btn-ghost btn-lg" href="events.html">See group options</a></div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ MARQUEE ============ -->
@@ -120,7 +137,7 @@
           <article class="card reveal" style="--d:.05s">
             <div class="icon">⛳</div>
             <h3>Simulator Bays</h3>
-            <p>Private bays powered by Trackman iO and Kakao VX with 4K projection, pin-accurate ball tracking, and swing analysis &mdash; built for up to 6 players each.</p>
+            <p>Ten private bays &mdash; 6 Trackman iO and 4 Kakao VX &mdash; with 4K projection, pin-accurate ball tracking, and swing analysis &mdash; built for up to 6 players each.</p>
             <a class="card-link" href="pricing.html">See rates</a>
           </article>
           <article class="card reveal" style="--d:.12s">
@@ -139,7 +156,7 @@
             <div class="icon">🎉</div>
             <h3>Private Events</h3>
             <p>Corporate team building, birthdays, bachelor parties, and league nights &mdash; tailored packages with food, drinks, and tournament play.</p>
-            <a class="card-link" href="reserve.html">Plan an event</a>
+            <a class="card-link" href="events.html#inquiry">Plan an event</a>
           </article>
         </div>
       </div>
@@ -172,14 +189,19 @@
       <div class="wrap split">
         <div class="reveal">
           <p class="kicker" style="color:var(--magenta)">Eat &middot; Sleep &middot; Golf &middot; Repeat</p>
-          <h2>The 19th hole, lit in neon.</h2>
+          <h2>Food &amp; drink, served to your bay.</h2>
           <p class="lead">Our marble bar &mdash; stacked on a wall of golf balls &mdash; pours everything from local drafts to strawberry soju. Order from your bay and keep the round going.</p>
           <ul class="feature-list">
             <li><span class="tick" style="background:var(--magenta);box-shadow:0 0 14px rgba(255,77,157,.5)">✓</span><span><strong>Signature cocktails &amp; soju</strong> curated for K-town nights.</span></li>
             <li><span class="tick" style="background:var(--magenta);box-shadow:0 0 14px rgba(255,77,157,.5)">✓</span><span><strong>Gourmet bar bites</strong> &mdash; pizza, K-Town Loaded Fries, Space Sliders, and more.</span></li>
             <li><span class="tick" style="background:var(--magenta);box-shadow:0 0 14px rgba(255,77,157,.5)">✓</span><span><strong>In-bay service</strong> so the snacks find you mid-round.</span></li>
           </ul>
-          <a class="btn btn-magenta" href="pricing.html#menus">Browse the Menus</a>
+          <div class="menu-links">
+            <a class="btn btn-gold" href="menu.html">View the Full Menu</a>
+            <a class="btn btn-magenta" href="/food-menu.pdf">Food Menu (PDF)</a>
+            <a class="btn btn-ghost" href="/drink-menu.pdf">Drinks Menu (PDF)</a>
+            <a class="btn btn-ghost" href="/eventmenu">Event &amp; Group Menu (PDF)</a>
+          </div>
         </div>
         <div class="split-media reveal" style="--d:.1s">
           <img src="assets/img/neon-bar.jpg" alt="Neon-lit bar with 'Eat Sleep Golf Repeat' sign and buckets of bottled drinks" loading="lazy" width="1920" height="1280">
@@ -230,11 +252,10 @@
           <h2>One street. A whole universe.</h2>
           <p class="lead">iGolf is part of Space Hospitality's vertical playground on W 32nd Street &mdash; stack your night with ping pong, billiards, and karaoke just an elevator ride away.</p>
         </div>
-        <div class="card-grid">
+        <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))">
           <article class="card reveal"><h3>Space Ping Pong</h3><p>22 W 32nd St, Floor 8 &mdash; two floors up from iGolf.</p><a class="card-link" href="https://spacepingpong.com" target="_blank" rel="noopener">Visit</a></article>
           <article class="card reveal" style="--d:.08s"><h3>Space Karaoke</h3><p>34 W 32nd St, Floor 11 &mdash; private singing rooms, K-town style.</p><a class="card-link" href="https://spacekaraoke.com" target="_blank" rel="noopener">Visit</a></article>
           <article class="card reveal" style="--d:.16s"><h3>Space Billiard</h3><p>34 W 32nd St, Floor 12 &mdash; pool with a skyline backdrop.</p><a class="card-link" href="https://spacebilliard.com" target="_blank" rel="noopener">Visit</a></article>
-          <article class="card reveal" style="--d:.24s"><h3>TAL Bar &amp; Bistro</h3><p>32 W 32nd St, Floor 3 &mdash; Korean-inspired cocktails &amp; dining.</p><a class="card-link" href="https://talnyc.com" target="_blank" rel="noopener">Visit</a></article>
         </div>
       </div>
     </section>
@@ -280,7 +301,7 @@
           <p class="lead">Open daily from 8 AM. Walk-ins welcome, reservations recommended &mdash; especially on weekends.</p>
           <div class="hero-actions" style="margin-bottom:0">
             <a class="btn btn-gold btn-lg" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
-            <a class="btn btn-ghost btn-lg" href="reserve.html">Plan a Private Event</a>
+            <a class="btn btn-ghost btn-lg" href="events.html#inquiry">Plan a Private Event</a>
           </div>
         </div>
       </div>
@@ -321,10 +342,11 @@
         <div>
           <h4>Explore</h4>
           <ul>
-            <li><a href="pricing.html">Pricing &amp; Menus</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="menu.html">Food &amp; Drink Menu</a></li>
             <li><a href="lessons.html">Lessons</a></li>
             <li><a href="memberships.html">Memberships</a></li>
-            <li><a href="reserve.html">Private Events</a></li>
+            <li><a href="events.html">Group Events</a></li>
             <li><a href="https://igolf32.com/gift" target="_blank" rel="noopener">Gift Cards</a></li>
             <li><a href="https://igolf32.com/rewards" target="_blank" rel="noopener">Rewards</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
@@ -336,13 +358,16 @@
         <span>22 W 32nd St, Floor 6, NYC &middot; Koreatown</span>
       </div>
     </div>
-  </footer>
+  <nav aria-label="Privacy and SMS"><a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-use/">SMS Terms</a> · <a href="/sms-preferences/">SMS preferences</a></nav>
+</footer>
 
   <div class="mobile-cta" aria-label="Quick actions">
     <a class="primary" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
-    <a href="tel:+16468384004">Call Us</a>
+    <a href="events.html#inquiry">Plan an Event</a>
+    <a href="tel:+16468384004" aria-label="Call iGolf">Call</a>
   </div>
 
   <script src="main.js" defer></script>
+  <script src="growth.js" defer></script>
 </body>
 </html>

@@ -1,3 +1,22 @@
+# iGolf Website — Current Production Source
+
+Production: https://igolf32.com · Vercel project: `igolf32-emergency-site`.
+
+## Current release (2026-11-12)
+
+The deployable source matches production deployment `dpl_BEMbmZBNxYrTSzgcK2ifc7xEjWSD`. All 59 deployed source files were checked by SHA-1 before this sync.
+
+- Current redesign, inline menu, events page, membership rates, and booking links are included.
+- Event inquiries are stored through `api/inquiry.js` and emailed through Resend.
+- Production configuration requires `BLOB_READ_WRITE_TOKEN`, `RESEND_API_KEY`, `INQUIRY_ALERT_FROM`, and `INQUIRY_ALERT_TO`. Values live in Vercel / the automation vault, never in Git.
+- The sending domain is `mail.igolf32.com`; alerts go to `hello@igolf32.com`.
+- `.vercelignore` excludes historical captures and local-only files from deployment.
+- GitHub is the versioned source. This sync does not establish automatic deployment or a recurring mirror.
+
+The notes below are historical recovery/design documentation and may describe superseded UI or behavior.
+
+---
+
 # i Golf Website Backup
 
 Public website recovery snapshot for `igolf32.com`, captured on 2026-06-04.

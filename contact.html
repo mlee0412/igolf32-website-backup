@@ -8,12 +8,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact &amp; Location | iGolf By Space NYC</title>
   <meta name="description" content="Find iGolf By Space at 22 W 32nd St, Floor 6, New York, NY 10001 — in the heart of Koreatown. Call (646) 838-4004 or email hello@igolf32.com.">
+  <link rel="canonical" href="https://igolf32.com/contact">
   <meta name="theme-color" content="#07090d">
   <link rel="icon" href="assets/img/favicon-192.png">
+  <meta property="og:url" content="https://igolf32.com/contact">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Contact — iGolf By Space NYC">
   <meta property="og:description" content="22 W 32nd St, Floor 6, NYC. Open daily from 8 AM.">
-  <meta property="og:image" content="assets/img/sim-bay-1.jpg">
+  <meta property="og:image" content="https://igolf32.com/assets/img/sim-bay-1.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="growth.css">
+  <link rel="stylesheet" href="site-2026.css">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "iGolf By Space",
+    "description": "Indoor golf simulator lounge with Trackman iO and Kakao VX bays, full bar, lessons, memberships, and private events in Koreatown, NYC.",
+    "url": "https://igolf32.com/",
+    "telephone": "+1-646-838-4004",
+    "email": "hello@igolf32.com",
+    "image": "https://igolf32.com/assets/img/sim-bay-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "22 W 32nd St, Floor 6",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "08:00", "closes": "02:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/igolf32/",
+      "https://www.facebook.com/iGolf32/"
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -26,13 +59,17 @@
       <a class="brand" href="index.html" aria-label="iGolf By Space home">
         <img src="assets/img/logo-horizontal-white.png" alt="iGolf By Space" width="1920" height="480">
       </a>
+      <div class="header-quick"><a class="btn btn-ghost" href="events.html#inquiry">Plan an Event</a><a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a></div>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
       <nav class="nav-links" aria-label="Primary">
+        <a href="events.html">Events</a>
         <a href="pricing.html">Pricing</a>
+        <a href="menu.html">Menu</a>
         <a href="lessons.html">Lessons</a>
         <a href="memberships.html">Memberships</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book Now</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-ghost nav-event" href="events.html#inquiry">Plan an Event</a>
+        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
       </nav>
     </div>
   </header>
@@ -134,10 +171,11 @@
         <div>
           <h4>Explore</h4>
           <ul>
-            <li><a href="pricing.html">Pricing &amp; Menus</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="menu.html">Food &amp; Drink Menu</a></li>
             <li><a href="lessons.html">Lessons</a></li>
             <li><a href="memberships.html">Memberships</a></li>
-            <li><a href="reserve.html">Private Events</a></li>
+            <li><a href="events.html">Group Events</a></li>
             <li><a href="https://igolf32.com/gift" target="_blank" rel="noopener">Gift Cards</a></li>
             <li><a href="https://igolf32.com/rewards" target="_blank" rel="noopener">Rewards</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
@@ -149,13 +187,16 @@
         <span>22 W 32nd St, Floor 6, NYC &middot; Koreatown</span>
       </div>
     </div>
-  </footer>
+  <nav aria-label="Privacy and SMS"><a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-use/">SMS Terms</a> · <a href="/sms-preferences/">SMS preferences</a></nav>
+</footer>
 
   <div class="mobile-cta" aria-label="Quick actions">
     <a class="primary" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
-    <a href="tel:+16468384004">Call Us</a>
+    <a href="events.html#inquiry">Plan an Event</a>
+    <a href="tel:+16468384004" aria-label="Call iGolf">Call</a>
   </div>
 
   <script src="main.js" defer></script>
+  <script src="growth.js" defer></script>
 </body>
 </html>

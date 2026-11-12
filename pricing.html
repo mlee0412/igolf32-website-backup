@@ -8,12 +8,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing &amp; Menus | iGolf By Space NYC</title>
   <meta name="description" content="Simulator bay rates, food &amp; drink menus, and event packages at iGolf By Space — indoor golf simulators in Koreatown NYC. Book online at book.igolf32.com.">
+  <link rel="canonical" href="https://igolf32.com/pricing">
   <meta name="theme-color" content="#07090d">
   <link rel="icon" href="assets/img/favicon-192.png">
+  <meta property="og:url" content="https://igolf32.com/pricing">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Pricing &amp; Menus — iGolf By Space NYC">
   <meta property="og:description" content="Hourly simulator bay rates plus full food, drink, and event menus.">
-  <meta property="og:image" content="assets/img/neon-bar.jpg">
+  <meta property="og:image" content="https://igolf32.com/assets/img/neon-bar.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="growth.css">
+  <link rel="stylesheet" href="site-2026.css">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "iGolf By Space",
+    "description": "Indoor golf simulator lounge with Trackman iO and Kakao VX bays, full bar, lessons, memberships, and private events in Koreatown, NYC.",
+    "url": "https://igolf32.com/",
+    "telephone": "+1-646-838-4004",
+    "email": "hello@igolf32.com",
+    "image": "https://igolf32.com/assets/img/sim-bay-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "22 W 32nd St, Floor 6",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "08:00", "closes": "02:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/igolf32/",
+      "https://www.facebook.com/iGolf32/"
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -26,13 +59,17 @@
       <a class="brand" href="index.html" aria-label="iGolf By Space home">
         <img src="assets/img/logo-horizontal-white.png" alt="iGolf By Space" width="1920" height="480">
       </a>
+      <div class="header-quick"><a class="btn btn-ghost" href="events.html#inquiry">Plan an Event</a><a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a></div>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="events.html">Events</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="menu.html">Menu</a>
         <a href="lessons.html">Lessons</a>
         <a href="memberships.html">Memberships</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book Now</a>
+        <a class="btn btn-ghost nav-event" href="events.html#inquiry">Plan an Event</a>
+        <a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
       </nav>
     </div>
   </header>
@@ -69,13 +106,29 @@
                 <td>All other hours, holidays &amp; holiday eves</td>
                 <td>$80 / hr</td>
               </tr>
+              <tr>
+                <td><strong>Members</strong></td>
+                <td>Member bay rental &mdash; included daily member sessions are covered by your <a href="memberships.html">membership</a></td>
+                <td>$40 / hr</td>
+              </tr>
             </tbody>
           </table>
-          <p class="form-note" style="margin-top:14px">Rates shown per simulator bay and subject to change &mdash; the booking portal always reflects current pricing. Rental clubs included.</p>
+          <p class="form-note" style="margin-top:14px">Rates shown per simulator bay and subject to change &mdash; the booking portal always reflects current pricing. After the first hour, rentals are billed in 30-minute increments. Rental clubs included.</p>
         </div>
         <div class="hero-actions reveal" style="margin:34px 0 0">
           <a class="btn btn-gold btn-lg" href="https://book.igolf32.com/" target="_blank" rel="noopener">Check Live Availability</a>
           <a class="btn btn-ghost btn-lg" href="memberships.html">Or Join Monthly From $325</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="info-panel per-person reveal">
+          <p class="kicker">Split it with friends</p>
+          <h2>Rates are per bay, for up to 6 guests.</h2>
+          <p class="lead">At 6 guests that works out to <strong>from $10 per person per hour</strong> off-peak ($60 &divide; 6) and about $13.33 per person per hour at peak ($80 &divide; 6).</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a><a class="btn btn-ghost" href="events.html">Groups of 7+? Plan an event</a></div>
         </div>
       </div>
     </section>
@@ -87,7 +140,8 @@
           <h2>The menus</h2>
           <p class="lead">From gourmet bar bites to craft cocktails, soju, wine, and champagne &mdash; everything is served right to your simulator bay.</p>
           <div class="hero-actions" style="margin-top:24px">
-            <a class="btn btn-gold btn-lg" href="/menu.pdf">Open Current Menu PDF</a>
+            <a class="btn btn-gold btn-lg" href="menu.html">View the Full Menu</a>
+            <a class="btn btn-ghost btn-lg" href="/menu.pdf">Download Menu PDF</a>
           </div>
         </div>
         <div class="card-grid">
@@ -120,7 +174,7 @@
           <h2>Bringing a crowd?</h2>
           <p class="lead">Custom packages for parties of 7+ with reserved bays, food &amp; beverage minimums, and tournament formats.</p>
           <div class="hero-actions" style="margin-bottom:0">
-            <a class="btn btn-gold btn-lg" href="reserve.html">Request Event Pricing</a>
+            <a class="btn btn-gold btn-lg" href="events.html#inquiry">Request Event Pricing</a>
             <a class="btn btn-ghost btn-lg" href="tel:+16468384004">Call (646) 838-4004</a>
           </div>
         </div>
@@ -161,14 +215,15 @@
         <div>
           <h4>Explore</h4>
           <ul>
-            <li><a href="pricing.html">Pricing &amp; Menus</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="menu.html">Food &amp; Drink Menu</a></li>
             <li><a href="/menu.pdf">Current Menu PDF</a></li>
             <li><a href="/food-menu.pdf">Food Menu PDF</a></li>
             <li><a href="/drink-menu.pdf">Drink Menu PDF</a></li>
             <li><a href="/eventmenu">Event &amp; Group Menu PDF</a></li>
             <li><a href="lessons.html">Lessons</a></li>
             <li><a href="memberships.html">Memberships</a></li>
-            <li><a href="reserve.html">Private Events</a></li>
+            <li><a href="events.html">Group Events</a></li>
             <li><a href="https://igolf32.com/gift" target="_blank" rel="noopener">Gift Cards</a></li>
             <li><a href="https://igolf32.com/rewards" target="_blank" rel="noopener">Rewards</a></li>
             <li><a href="terms.html">Terms of Use</a></li>
@@ -180,13 +235,16 @@
         <span>22 W 32nd St, Floor 6, NYC &middot; Koreatown</span>
       </div>
     </div>
-  </footer>
+  <nav aria-label="Privacy and SMS"><a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-use/">SMS Terms</a> · <a href="/sms-preferences/">SMS preferences</a></nav>
+</footer>
 
   <div class="mobile-cta" aria-label="Quick actions">
-    <a class="primary" href="https://book.igolf32.com/">Book a Bay</a>
-    <a href="tel:+16468384004">Call Us</a>
+    <a class="primary" href="https://book.igolf32.com/" target="_blank" rel="noopener">Book a Bay</a>
+    <a href="events.html#inquiry">Plan an Event</a>
+    <a href="tel:+16468384004" aria-label="Call iGolf">Call</a>
   </div>
 
   <script src="main.js" defer></script>
+  <script src="growth.js" defer></script>
 </body>
 </html>

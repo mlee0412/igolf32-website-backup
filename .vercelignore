@@ -10,3 +10,5 @@ homepage.html
 status.txt
 .DS_Store
 README.md
+.env*
+node_modules
